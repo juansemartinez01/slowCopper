@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Slow Copper Clothing</title>
+  <!-- Bootstrap mobile, para que sea mas responsive -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- codigo JS para bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/367b71be55.js" crossorigin="anonymous"></script>
+  <!-- Slow copper head title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- H2 font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- Keep Mooving font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Icono de la pestaña favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <div class="head">
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Slow Copper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sections
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#Section1">T-Shirts</a></li>
+                <li><a class="dropdown-item" href="#Section2">Shirts</a></li>
+                <li><a class="dropdown-item" href="#Section3">Trausers</a></li>
+                <li><a class="dropdown-item" href="#Section4">Swimming suits</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#footer">Social media</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <button class="btn btn-outline-dark navbarButton favorite" type="button" name="button"><i class="fa-solid fa-star"></i></button>
+        <button class="btn btn-outline-dark navbarButton buying" type="button" name="button"><i class="fa-solid fa-cart-shopping"></i></button>
+        <div class="hidenBox favorite">
+          <h5>Your favourites</h5>
+          <ul id="yourFavorites">
+          </ul>
+        </div>
+        <div class="hidenBox cart">
+          <h5>Shopping Cart</h5>
+          <ul id="yourShopping">
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="middle">
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="carouselImg firstImg" src="images/imagenSkate.png" class="d-block w-100" alt="...">
+          <div class="firstImgCap">
+            <p>Find the best sportswear and casual.</p>
+            <p>Shop Now!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="carouselImg" src="images/snowboard_ccexpress.png" class="d-block w-100" alt="...">
+          <div class="decriptionCarouselImg">
+            <p>Keep Mooving</p>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img class="carouselImg thirdImage" src="images/surfImag.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Your choice</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cardSection row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">T-shirts</h5>
+            <p class="card-text">We have the best designs, fits and all you need fot your outfit!</p>
+            <a href="#Section1" class="btn btn-outline-dark">Shop now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Shirts</h5>
+            <p class="card-text">We have the best designs, fits and all you need fot your outfit!</p>
+            <a href="#Section2" class="btn btn-outline-dark">Shop now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Pants</h5>
+            <p class="card-text">We have the best designs, fits and all you need fot your outfit!</p>
+            <a href="#Section3" class="btn btn-outline-dark">Shop now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Swimsuits</h5>
+            <p class="card-text">We have the best designs, fits and all you need fot your outfit!</p>
+            <a href="#Section4" class="btn btn-outline-dark">Shop Now!</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+
+    <!-- Cards for the items to sell -->
+    <div id="Section1">
+      <h2>T-Shirts</h2>
+      <div class="row">
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Vans Blue t-shirt</h5>
+
+              <img class="cardImage" src="images/remera.png" alt="Vans-blue-img">
+              <h6>19,99 $</h6>
+              <div class="cardButtons">
+                <!-- Ponemos eso en el href para que no salte al inicio de la pagina cada vez que lo precionamos, porque eso hace por default -->
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Vans Blue t-shirt</h5>
+              <img class="cardImage" src="images/remera.png" alt="Vans-blue-img">
+              <h6>19,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Vans Blue t-shirt</h5>
+              <img class="cardImage" src="images/remera.png" alt="Vans-blue-img">
+              <h6>19,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Vans Blue t-shirt</h5>
+              <img class="cardImage" src="images/remera.png" alt="Vans-blue-img">
+              <h6>19,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="Section2">
+      <h2>Shirts</h2>
+      <div class="row">
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Lacoste Blue shirt</h5>
+
+              <img class="cardImage" src="images/shirt.png" alt="Lacoste-blue-shirt-img">
+              <h6>49,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Lacoste Blue shirt</h5>
+              <img class="cardImage" src="images/shirt.png" alt="Lacoste-blue-shirt-img">
+              <h6>49,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Lacoste Blue shirt</h5>
+              <img class="cardImage" src="images/shirt.png" alt="Lacoste-blue-shirt-img">
+              <h6>49,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Lacoste Blue shirt</h5>
+              <img class="cardImage" src="images/shirt.png" alt="Lacoste-blue-shirt-img">
+              <h6>49,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <div id="Section3">
+      <h2>Pants</h2>
+      <div class="row">
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Snowboard brown pants</h5>
+
+              <img class="cardImage" src="images/pants.png" alt="Snowboard-pants-img">
+              <h6>99,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Snowboard brown pants</h5>
+              <img class="cardImage" src="images/pants.png" alt="Snowboard-pants-img">
+              <h6>99,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Snowboard brown pants</h5>
+              <img class="cardImage" src="images/pants.png" alt="Snowboard-pants-img">
+              <h6>99,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Snowboard brown pants</h5>
+              <img class="cardImage" src="images/pants.png" alt="Snowboard-pants-img">
+              <h6>99,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="Section4">
+      <h2>Swimsuits</h2>
+      <div class="row">
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Hugo Boss Swimsuit</h5>
+
+              <img class="cardImage" src="images/swimsuit.png" alt="Hugo-Boss-swimsuit-img">
+              <h6>29,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Hugo Boss Swimsuit</h5>
+              <img class="cardImage" src="images/swimsuit.png" alt="Hugo-Boss-swimsuit-img">
+              <h6>29,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Hugo Boss Swimsuit</h5>
+              <img class="cardImage" src="images/swimsuit.png" alt="Hugo-Boss-swimsuit-img">
+              <h6>29,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="customCard card">
+            <div class="card-body">
+              <h5 class="card-title">Hugo Boss Swimsuit</h5>
+              <img class="cardImage" src="images/swimsuit.png" alt="Hugo-Boss-swimsuit-img">
+              <h6>29,99 $</h6>
+              <div class="cardButtons">
+                <a href='javascript:void();' class="btn btn-outline-dark favorite"><i class="fa-solid fa-star"></i></a>
+                <a href='javascript:void();' class="btn btn-outline-dark buy"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"class="footer">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook-square"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <p><i class="fa-solid fa-copyright"></i> Slow Copper Inc.</p>
+
+  </div>
+
+<!-- jquery cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
